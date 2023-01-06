@@ -1,0 +1,53 @@
+<md-toolbar class="md-hue-3">
+    <div class="md-toolbar-tools" style="justify-content: center;">
+        <div flex md-truncate>
+            <h3 class="md-headline">List Todos</h3>
+        </div>
+        <md-input-container style="font-size: 12pt;" md-no-float>
+            <md-icon><i class="fa fa-search"></i></md-icon>
+
+            <input style="color: black; font-weight: 600;" placeholder="Search Todos..." aria-label="Search Todos..."
+                ng-model="product_search_keywords" />
+        </md-input-container>
+
+        <md-button style="padding-left: 20px; padding-right: 20px;" class="md-raised md-primary"
+            ng-click="goTo('/create')">New Todo</md-button>
+    </div>
+    <md-content flex>
+        <md-list ng-init="todoList()">
+            <md-list-item class="md-3-line" ng-repeat="todo in todos | filter : product_search_keywords">
+                <div class="md-list-item-text">
+                    <h3 style="font-weight: 600; font-size: 16pt;">{{todo.title}}</h3>
+                    <!-- <h4>{{todo.description}}</h4>
+                    <h6>{{todo.daysTaken}}</h6> -->
+                    <p ng-bind="{{todo.lastModified}} | date:'dd-MM-yyyy hh:mm a'"></p>
+                </div>
+
+                <div class="md-secondary-container">
+
+                    <md-button class="md-icon-button md-primary" ng-click="goTo('/update/'+todo.id)" aria-label="Edit">
+                        <md-icon>
+                            <h5><i class="fa fa-edit"></i></h5>
+                        </md-icon>
+                    </md-button>
+
+                    <md-button class="md-icon-button md-accent" ng-click="confirmDeleteProduct(todo.id)"
+                        aria-label="Delete">
+                        <md-icon>
+                            <h5><i class="fa fa-trash"></i></h5>
+                        </md-icon>
+                    </md-button>
+
+                    <md-button class="md-icon-button" ng-click="goTo('/todo_details/1')" aria-label="Details">
+                        <md-icon>
+                            <h5><i class="fa fa-info-circle"></i></h5>
+                        </md-icon>
+                    </md-button>
+
+                </div>
+                <md-divider ng-if="!$last"></md-divider>
+
+            </md-list-item>
+        </md-list>
+    </md-content>
+</md-toolbar>

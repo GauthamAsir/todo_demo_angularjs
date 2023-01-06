@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>TODO Demo App</title>
+
+    <!-- angular material style sheet -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+
+    <!-- roboto font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+
+    <!-- Bootstarp -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.6/ui-bootstrap-csp.css"
+        integrity="sha512-TSigfdiJq7G9AWJnE/8D3M/HcBs9wfKpbrCbMg4iSs8IRVujA854B5wd/glfPzBRaeqiLLz1jHm6swYsci2txQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="bootstarp/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- include custom CSS -->
+    <link rel="stylesheet" href="styles/main.css" />
+
+
+</head>
+
+<body>
+
+
+
+    <!-- container of our app -->
+    <div class="container" ng-app="todoApp">
+
+        <!-- read products template -->
+
+
+        <!-- <h3 style="margin: 12px;">Index Page</h3> -->
+
+        <!-- <ng-include src="'./read_products.html'"></ng-include> -->
+        <!-- 
+        <md-button class="md-raised" ng-click="next()">Create</md-button>
+
+        <a href="#/create">Add Movie</a> -->
+        <div class="jumbotron">
+            <h1><i class="fa fa-th-list"></i> TODO Demo App</h1>
+        </div>
+        <ng-view></ng-view>
+
+    </div> <!-- end container -->
+
+
+
+
+
+
+    <!-- include angular js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+
+    <!-- needed for angular material -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular-messages.min.js"></script>
+
+    <!-- angular material Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+
+    <!-- Routing Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular-route.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <!-- Bootstarp -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.6/ui-bootstrap.js"
+        integrity="sha512-3z5zbCPEG7DvKKz46yvPmKL+w+UDfwY0f2YWFVIwBb+2Y4E23jTZHZxG+naAiTllvMNQAhapPDKGHBT7V3fQOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="bootstarp/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- app -->
+    <script type="text/javascript" src="app.js"></script>
+
+    <!-- products controller -->
+    <script type="text/javascript" src="scripts/productsController.js"></script>
+    <script type="text/javascript" src="scripts/todo_controller.js"></script>
+
+    <!-- products factory -->
+    <!-- <script type="text/javascript" src="app/products/products.factory.js"></script> -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<md-toolbar>
+    <div class="md-toolbar-tools">
+        <h2>TODO Details</h2>
+    </div>
+</md-toolbar>
+
+<div class="md-dialog-content" ng-init="initDetails()">
+
+    <div class="container" style="margin-bottom: 50px;"></div>
+
+    <label class="title_card">ID</label><br>
+    <label>{{id_d}}</label>
+
+    <div class="container" style="margin-bottom: 10px;"></div>
+
+    <label class="title_card">Title</label><br>
+    <label>{{title_d}}</label>
+
+    <div class="container" style="margin-bottom: 10px;"></div>
+
+    <label class="title_card">Description</label><br>
+    <label>{{description_d}}</label>
+
+    <div class="container" style="margin-bottom: 10px;"></div>
+
+    <label class="title_card">Days Taken</label><br>
+    <label>{{daysTaken_d}}</label>
+
+    <div class="container" style="margin-bottom: 10px;"></div>
+
+    <label class="title_card">Created Date</label><br>
+    <label ng-bind="{{createdDate_d}} | date:'dd-MM-yyyy hh:mm a'"></label>
+
+    <div class="container" style="margin-bottom: 10px;"></div>
+
+    <label class="title_card">Last Modified</label><br>
+    <label ng-bind="{{lastModified_d}} | date:'dd-MM-yyyy hh:mm a'"></label>
+
+    <div class="container" style="margin-bottom: 40px;">
+        <br><br>
+    </div>
+</div>

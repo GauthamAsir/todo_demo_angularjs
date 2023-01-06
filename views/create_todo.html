@@ -1,0 +1,41 @@
+<form ng-cloak>
+
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2>New TODO</h2>
+        </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+        <div class="md-dialog-content">
+
+            <div class="container" style="margin-bottom: 50px;"></div>
+
+            <!-- we are using ng-model to bind this view and the 'product model -->
+            <md-input-container class="md-block">
+                <label>Title</label>
+                <input ng-model="title_in">
+            </md-input-container>
+
+            <div class="container" style="margin-bottom: 30px;"></div>
+
+            <md-input-container class="md-block">
+                <label>Description</label>
+                <input ng-model="description_in">
+            </md-input-container>
+
+            <div class="container" style="margin-bottom: 30px;"></div>
+
+            <md-input-container class="md-block">
+                <label>Days Taken</label>
+                <input type="number" ng-model="daysTaken_in">
+            </md-input-container>
+
+        </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+        <md-button ng-click="goBack()">Cancel</md-button>
+        <md-button ng-click="createTodo()" class="md-primary">Create</md-button>
+    </md-dialog-actions>
+</form>

@@ -1,0 +1,123 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.jumbotron {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box {
+    border: 1px solid #808080;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    height: 100%;
+    width: 40%;
+}
+
+md-input-container .md-errors-spacer {
+    min-height: 0px !important;
+}
+
+.title_card {
+    font-size: 12px;
+    color: gray !important;
+    text-align: center !important;
+}
+
+.row-h {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+md-dialog {
+    width: 50%;
+}
+
+.m-20px-0 {
+    margin: 20px 0;
+}
+
+.m-b-20px {
+    margin-bottom: 20px;
+}
+
+.m-b-0px {
+    margin-bottom: 0px;
+}
+
+.md-info {
+    background-color: #2196F3 !important;
+    color: #ffffff !important;
+}
+
+.md-danger {
+    background-color: #D32F2F !important;
+    color: #ffffff !important;
+}
+
+.w-5-pct {
+    width: 5%;
+}
+
+.w-10-pct {
+    width: 10%;
+}
+
+.w-20-pct {
+    width: 20%;
+}
+
+.w-30-pct {
+    width: 30%;
+}
+
+.w-35-pct {
+    width: 35%;
+}
+
+.w-40-pct {
+    width: 40%;
+}
+
+.w-50-pct {
+    width: 50%;
+}
+
+.w-60-pct {
+    width: 60%;
+}
+
+.w-70-pct {
+    width: 70%;
+}
+
+.w-80-pct {
+    width: 80%;
+}
+
+.w-90-pct {
+    width: 90%;
+}
+
+.w-100-pct {
+    width: 100%;
+}
+
+.t-a-c {
+    text-align: center;
+}
+
+.t-a-l {
+    text-align: left;
+}
+
+.margin-bottom-1em {
+    margin-bottom: 1em;
+}

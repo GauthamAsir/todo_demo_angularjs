@@ -1,0 +1,27 @@
+<div class="container-fluid">
+
+    <!-- <md-toolbar style="padding-left: 12px; text-align: center; justify-content: center;">
+        <h1><i class="fa fa-th-list"></i> TODO Demo App</h1>
+    </md-toolbar> -->
+
+    <div class="row">
+
+        <div class="box">
+            <div class="row-h">
+                <div class="col-xs-8">
+                    <h5><i class="fa fa-th-list"></i> Total TODO's Count </h5>
+                </div>
+                <div class="col-xs-4">
+                    <md-button class="md-raised md-accent" ng-click="goTo('/create')">Add Todo</md-button>
+                </div>
+            </div>
+            <div class="contaier" style="margin-bottom: 24px;"></div>
+            <div style="text-align: center;">
+                <h1 ng-init="todoList() " style="font-size: 60pt">{{todos.length}}</h1>
+            </div>
+            <md-button class="md-accent md-hue-3" ng-click="goTo('/list')">View All Todos
+                <i class="fa-solid fa-chevron-right"></i></md-button>
+        </div>
+    </div>
+
+</div>
