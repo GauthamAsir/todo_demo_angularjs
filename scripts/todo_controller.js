@@ -10,6 +10,7 @@ app.service('todoService', function () {
         return todos;
     }
     this.createNewTodo = function (title_in, description_in, daysTaken_in) {
+        console.log(todos.length + 1);
         todos.push(
             {
                 id: todos.length + 1,
@@ -59,8 +60,9 @@ app.controller('todoCtrl', function ($scope, $location, todoService, $routeParam
 
     $scope.initDetails = function () {
         var id = $routeParams.id;
+        // console.log(todoService.getTodos());
         var t = todoService.getTodos().find(tt => tt.id == id);
-
+        // console.log(t);
         $scope.title_d = t.title;
         $scope.description_d = t.description;
         $scope.daysTaken_d = t.daysTaken;
